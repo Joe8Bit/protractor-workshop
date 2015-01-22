@@ -19,9 +19,13 @@ angular.module('boilerplate', [
         templateUrl: 'app/main/main.html',
         controller: 'MainCtrl'
       })
-      .when('/tv', {
-        templateUrl: 'app/dashboard/tv/tv.html',
-        controller: 'TvCtrl'
+      .when('/dashboard', {
+        templateUrl: 'app/dashboard/dashboard.html',
+        controller: 'DashboardCtrl'
+      })
+      .when('/dashboard/transfer', {
+        templateUrl: 'app/dashboard/transfer/transfer.html',
+        controller: 'TransferCtrl'
       })
       .otherwise({
         redirectTo: '/'

@@ -83,13 +83,10 @@
     "node": ">=0.10.0"
   },
   "pre-commit": [
-    "scss-lint",
     "hint",
     "validate",
     "codestyle",
-    "complexity",
     "test",
-    "e2e",
-    "docs"
+    "e2e"
   ]
 }

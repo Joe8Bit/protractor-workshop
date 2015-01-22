@@ -1,1 +1,17 @@
-<h1>Welcome to the boilerplate!</h1>
+<div id="container">
+  <h1>Welcome to the Foobar Bank!</h1>
+
+  <form novalidate class="simple-form">
+
+    <p ng-show="error" class="error">{{error}}</p>
+
+    <label for="username">Username</label>
+    <input type="text" name="username"  id="password" ng-model="user.username" />
+
+    <label for="password">Password</label>
+    <input type="password" name="password" id="password" ng-model="user.password">
+
+    <input type="submit" ng-click="login(user)" value="Login" class="login" />
+
+  </form>
+</div>

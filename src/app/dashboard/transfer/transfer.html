@@ -1,0 +1,30 @@
+<div id="container">
+  <h1>Make transfer</h1>
+
+  <form novalidate class="simple-form">
+
+    <a href="/dashboard" id="back">&laquo; Back to dashboard</a>
+
+    <table ng-show="transfers.length" id="transfer">
+      <tr>
+        <th>Amount</th>
+        <th>Account</th>
+        <th>Date</th>
+      </tr>
+      <tr ng-repeat="tra in transfers" id="transfer-{{tra.id}}">
+        <td class="amount">{{tra.amount}}</td>
+        <td class="to">{{tra.to}}</td>
+        <td class="timestamp">{{tra.timestamp | date:'dd/MM/yyyy @ h:mma'}}</td>
+      </tr>
+    </table>
+
+    <label for="amount">Transfer amount</label>
+    <input type="number" name="amount" id="amount" ng-model="transfer.amount" />
+
+    <label for="to">To account</label>
+    <input type="text" name="to" id="to" ng-model="transfer.to" />
+
+    <input type="submit" ng-click="makeTransfer(transfer)" value="Transfer" class="transfer" />
+
+  </form>
+</div>

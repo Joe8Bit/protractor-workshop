@@ -1,32 +1,60 @@
-// Please read the README.md file in this directory before continuing
-//
-// This file contains ONLY imports, there should be no style declarations in here whatsoever. If 
-// including frameworks please link to their docs
+#container {
+  width: 400px;
+  margin: 10em auto;
+  background: #f3f3f3;
+  border: 1px solid #ccc;
+  font-family: Helvetica, sans-serif;
 
-// ----------------------------- VENDOR
-// We use Bourbon for our core mixins (http://bourbon.io)
-// We use Neat, an extension to Bourbon, for our grid (http://neat.bourbon.io)
-@import 'bourbon';
-@import 'neat';
+  h1 {
+    font-size: 22px;
+    font-weight: normal;
+    padding: 1em;
+    background: #b0ede8;
+    border-bottom: 1px solid #ccc;
+    margin-top: 0px;
+  }
 
-// ----------------------------- UTILITIES
-// Include a clearfix with '@extends clearfix;'
-@import 'utilities/clearfix';
+  .error {
+    background-color: #edb8b0;
+    color: #81372b;
+    padding: 1em;
+  }
 
-// ----------------------------- ATOMS
-@import 'atoms/colors';
-@import 'atoms/grid-settings';
-@import 'atoms/typography';
-@import 'atoms/layout-sizing';
-@import 'atoms/forms';
-@import 'atoms/lists';
-@import 'atoms/buttons';
-@import 'atoms/tables';
+  form {
+    padding: 0 1em 1em;
+    label {
+      display: block;
+      margin: 1em 0 0.2em;
+    }
+    input {
+      display: block;
+      font-size: 0.8em;
+      padding: 0.3em;
+      border-radius: 0.1em;
+      border: 1px solid #ccc;
+      width: 60%;
+    }
 
-// ----------------------------- MOLECULES
+    a {
+      display: block;
+      margin-top: 1em;
+      color: darken(#b0ede8, 40%);
+    }
 
-// ----------------------------- ORGANISMS
-
-// ----------------------------- TEMPLATES
-
-
+    .login,
+    .transfer {
+      display: block;
+      margin-top: 2em;
+      border: 0px;
+      border-radius: 0.1em;
+      background: darken(#b0ede8, 20%);
+      padding: 1em;
+      font-size: 0.8em;
+      width: 20%;
+      cursor: pointer;
+      &:hover {
+        background: darken(#b0ede8, 40%);
+      }
+    }
+  }
+}
