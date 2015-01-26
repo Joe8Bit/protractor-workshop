@@ -1,19 +1,6 @@
-## Front-end Boilerplate
+## Protractor testing workshop
 
-The purpose of this app is to put together a sensible default for producing high quality front-end code, both from a presentation (SCSS) but mainly from a behaviour context (JavaScript and Angular).
-
-From a build perspective there are several technologies involved:
-
-* Gulp (task orchestration)
-* PhantomJS (headless browser for automated testing)
-* SCSS (Ruby) (to make CSS not suck)
-* Karma (for running unit tests in the browser)
-* Protractor (for running browser driven e2e tests)
-* shmock (for mocking a REST JSON API)
-* browsersync (for multi-device testing)
-* bower and NPM (for package management)
-* JShint, JSCS, node-complexity, SCSS Lint (for quality assurance)
-* modrewrite (to support Angular in HTML5 mode)
+Contained in this repo is a simple Angular application that uses patterns and anti-patterns for doing E2E testing with Protractor.
 
 ## Running the application
 There are several dependencies that need to be installed seperatley before the app can be run, they are:
